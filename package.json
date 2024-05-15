@@ -1,0 +1,33 @@
+{
+  "name": "electron-tasks-app-jonatandb",
+  "version": "1.0.0",
+  "description": "A tasks manager desktop app with Electron and SQLite",
+  "main": "src/main.js",
+  "author": {
+    "name": "Jonatandb",
+    "email": "jonatandb@gmail.com",
+    "url": "https://github.com/jonatandb"
+  },
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-builder"
+  },
+  "build": {
+    "appId": "com.example.electron-tasks-app-jonatandb",
+    "win": {
+      "target": "nsis",
+      "icon": "src/assets/icon.ico"
+    },
+    "files": [
+      "src/**/*",
+      "node_modules/**/*"
+    ]
+  },
+  "dependencies": {
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "electron": "^23.0.0",
+    "electron-builder": "^23.0.0"
+  }
+}
